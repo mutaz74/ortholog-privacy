@@ -37,7 +37,7 @@
 <body>
 
 <h1>OrthoLog — Privacy Policy</h1>
-<p class="updated">Last updated: 17 August 2026</p>
+<p class="updated">Last updated: 23 August 2026</p>
 
 <p>OrthoLog is a personal surgical logbook for orthopedic surgery residents. This policy explains,
 in plain language, what the app does and does not do with information.</p>
@@ -153,8 +153,9 @@ identifying strip burned into the image itself.</p>
 
 <h2>Anonymous usage counts</h2>
 <p>So that OrthoLog can be improved around how residents actually use it, the app keeps a small set
-of counters on your phone and sends them, at most once a day, to the developer's own private Apple
-iCloud (CloudKit) container. This is the <strong>complete</strong> list of what is sent:</p>
+of counters on your phone and sends them, at most once a day, to a shared area inside the
+developer's own Apple iCloud (CloudKit) container. This is the <strong>complete</strong> list of
+what is sent:</p>
 <ul>
   <li><strong>Counts</strong> of: cases saved; how many were started from a blank form, the body
     map, procedure search, voice, "repeat last case", or a spreadsheet import; how many were flagged
@@ -178,6 +179,22 @@ hospital name, any rotation, your involvement level, your name, your training ye
 anything a patient could be identified from. If you are not signed into iCloud or have no
 connection, nothing is sent and the app carries on working exactly the same.</p>
 
+<p><strong>You can turn this off.</strong> It is on when you install the app. To stop it, go to
+<strong>Settings &rarr; About</strong> and turn off <strong>"Share anonymous usage data"</strong>.
+Turning it off does three things: the app stops counting, everything it has already counted is
+deleted from your phone, and what was already sent is deleted as well. (That last step needs a
+connection — if you are offline when you switch it off, the already-sent copy is removed the next
+time the app can reach iCloud.) Nothing else about the app changes, and you can turn it back on at
+any time.</p>
+
+<p><strong>About the "shared area" this goes to.</strong> Apple gives every app developer two kinds
+of storage: a private one, where each person's own data is visible only to them, and a shared one
+belonging to the app itself. Your cases sync through the <em>private</em> one. The usage counts and
+feedback described here go to the <em>shared</em> one, which is how they reach the developer without
+any company server existing. It is not on the public internet and it is not searchable, but it is
+not the same thing as your own private storage either, and this policy previously described it
+incorrectly as private.</p>
+
 <h2>Data you choose to share</h2>
 <p>OrthoLog can create files at your request — a spreadsheet export of your cases, or a full
 backup of your logbook. <strong>These files are created only when you tap the button to make
@@ -185,14 +202,12 @@ them, and they go only where you choose to send them</strong> (for example, savi
 app, or emailing them to yourself or a supervisor). OrthoLog never sends these anywhere on its
 own. Your private notes are left out of the spreadsheet export unless you turn on "Include my
 private notes" before creating it; they are always included in your own personal backup file, which
-is meant for you. (The one exception is the export offered when a test version of the app expires:
-because that is your last chance to keep what you wrote, it includes your private notes, and says so
-on the screen.)</p>
+is meant for you.</p>
 
 <h2>Feedback you send</h2>
 <p>OrthoLog has a "Send feedback" screen in Settings. If you write something there and tap Send,
-that message is delivered to the developer through the same private Apple iCloud (CloudKit)
-container — no company server, no third party. It carries the text you wrote, the app version, your
+that message is delivered to the developer through the same shared area of his own Apple iCloud
+(CloudKit) container — no company server, no third party. It carries the text you wrote, the app version, your
 iOS version, the random installation identifier described above, and an email address <strong>only
 if you choose to type one in</strong> so you can get a reply. Leave the email blank and the message
 is anonymous.</p>
