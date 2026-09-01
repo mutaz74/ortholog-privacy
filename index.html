@@ -37,7 +37,7 @@
 <body>
 
 <h1>OrthoLog — Privacy Policy</h1>
-<p class="updated">Last updated: 23 August 2026</p>
+<p class="updated">Last updated: 1 September 2026</p>
 
 <p>OrthoLog is a personal surgical logbook for orthopedic surgery residents. This policy explains,
 in plain language, what the app does and does not do with information.</p>
@@ -70,6 +70,10 @@ and none includes your name or your training year.</p>
 
 <p><strong>Photos you attach to a case are not on that list and never will be.</strong> They stay on
 your own devices — see "Photos you attach" below.</p>
+
+<p><strong>Voice recordings and voice transcripts are not on that list either.</strong> Audio is
+processed in memory using Apple's on-device speech recognition, never stored or uploaded, and a
+pending text draft stays only on the phone until you save or discard it.</p>
 </div>
 
 <h2>What OrthoLog stores</h2>
@@ -96,6 +100,8 @@ keeps working fully offline either way.</p>
     exists so that anything you want kept to yourself has a place to go.</li>
   <li>It does <strong>not</strong> use advertising, or tracking of any kind. Nothing it collects is
     combined with data from other companies, or shared with or sold to anybody.</li>
+  <li>It does <strong>not</strong> upload or retain voice audio, and it does <strong>not</strong> send
+    voice transcripts to the developer, analytics, feedback, or any third party.</li>
   <li>It does <strong>not</strong> read your photo library, your location, your contacts, or any
     device identifiers — no advertising identifier, no phone or hardware ID, no Apple ID, no email
     address unless you type one into feedback yourself. The only images it ever holds are the ones you
@@ -215,15 +221,23 @@ is anonymous.</p>
 offline, the message waits on your phone until you next open the app.</p>
 
 <h2>Voice logging (optional)</h2>
-<p>OrthoLog can be opened straight to a new case using Siri, and — if you choose to set up the
-optional Shortcut — can pre-fill that case from what you say out loud. This works entirely through
-<strong>Apple's own Siri, Dictation, and Shortcuts systems</strong>, which are built into your
-iPhone; OrthoLog never records audio, never stores audio, and never sends anything it hears to us
-or to any third party. Speech you dictate is handled by Apple according to Apple's own Siri
-privacy practices (the same as when you dictate a text message or a note); OrthoLog only ever
-receives the resulting text, and only uses it to try to fill in fields on the new-case form — you
-always see the form before anything is saved, so nothing is logged without you reviewing it first.
-Setting this up is entirely optional and off by default; the app works fully without it.</p>
+<p>You can start voice logging from Home or say “Hey Siri, log a case in OrthoLog.” Both routes
+open the same recorder inside OrthoLog; there is no shared Shortcut to install. Siri handles only
+the launch command. The case itself is transcribed with Apple's Speech framework using an
+<strong>on-device recognizer required by the app</strong>. If on-device recognition is unavailable
+for the device or locale, OrthoLog stops and offers typed entry rather than sending the recording
+to a network recognizer.</p>
+
+<p>OrthoLog uses microphone audio only in memory for the current attempt. It never writes that audio
+to a file, stores it, uploads it, or includes it in analytics or feedback. The resulting transcript
+is shown as an editable draft and used to suggest fields on the new-case form. To prevent an
+unfinished dictation from disappearing during navigation, up to five pending text drafts may stay
+locally on the phone for up to 24 hours; they are removed after the case is successfully saved or
+you explicitly discard the draft. Transcripts are never sent to the developer.</p>
+
+<p>Nothing is logged automatically. You see the transcript, every field OrthoLog matched, and any
+ambiguity notices before choosing whether to save. Voice logging is optional, requires microphone
+and Speech Recognition permission, and the rest of the app works without it.</p>
 
 <h2>Reminders</h2>
 <p>If you flag a case as an EPA (Entrustable Professional Activity) candidate, OrthoLog can remind
